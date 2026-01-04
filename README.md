@@ -1,32 +1,32 @@
 # Salary Prediction using Tree-Based Regression
 
-[cite_start]This project focuses on predicting employee salaries using tree-based regression models[cite: 1]. [cite_start]It was developed as part of the **TIA (Tehnici de Inteligență Artificială)** course for Assignment 2[cite: 1].
+This project focuses on predicting employee salaries using tree-based regression models. It was developed as part of the **TIA (Tehnici de Inteligență Artificială)** course for Assignment 2.
 
 ---
 
 ## 📌 Project Overview
-[cite_start]The primary goal is to analyze the provided dataset and build a predictive model that estimates salaries using tree-based architectures[cite: 3, 5]. [cite_start]The project involves comprehensive data preprocessing and hyperparameter tuning using GridSearchCV[cite: 5].
+The primary goal is to analyze the provided dataset and build a predictive model that estimates salaries using tree-based architectures. The project involves comprehensive data preprocessing and hyperparameter tuning using GridSearchCV.
 
 ## 📊 Dataset Description
-[cite_start]The model utilizes the `salary.csv` dataset [cite: 9][cite_start], which includes the following features[cite: 11]:
-* [cite_start]**Age**: Employee age[cite: 11].
-* [cite_start]**Gender**: Male or Female[cite: 11].
-* [cite_start]**Education Level**: Bachelor's, Master's, or PhD[cite: 11].
-* [cite_start]**Job Title**: Professional designation[cite: 11].
-* [cite_start]**Years of Experience**: Total professional experience[cite: 11].
-* [cite_start]**Salary**: The target variable for regression[cite: 11].
+The model utilizes the `salary.csv` dataset, which includes the following features :
+* **Age**: Employee age.
+* **Gender**: Male or Female.
+* **Education Level**: Bachelor's, Master's, or PhD.
+* **Job Title**: Professional designation .
+* **Years of Experience**: Total professional experience.
+* **Salary**: The target variable for regression.
 
 ## ⚙️ Methodology
 
 ### 1. Data Processing
-[cite_start]Following laboratory practices[cite: 3], the data underwent the following transformations:
-* [cite_start]**Cleaning**: Removal of null values (e.g., empty records found at index 172 and 260) and duplicate entries[cite: 13, 15].
-* [cite_start]**Ordinal Encoding**: "Education Level" was manually mapped to preserve its logical hierarchy[cite: 11].
+Following laboratory practices, the data underwent the following transformations:
+* **Cleaning**: Removal of null values (e.g., empty records found at index 172 and 260) and duplicate entries.
+* **Ordinal Encoding**: "Education Level" was manually mapped to preserve its logical hierarchy.
 * **Label Encoding**: Applied to "Gender" and "Job Title" to convert categorical text into numerical data.
 * **Data Splitting**: The dataset was segmented into 80% training and 20% testing sets.
 
 ### 2. Model Training and Evaluation
-[cite_start]Multiple models were trained using different combinations of hyperparameters[cite: 5]:
+Multiple models were trained using different combinations of hyperparameters:
 
 | Model | Hyperparameters Optimized |
 | :--- | :--- |
@@ -49,6 +49,5 @@ The models achieved the following metrics during evaluation:
 * **Best Params**: `{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5}`
 
 ## 🚀 Submission Details
-* [cite_start]**File Name**: `Nume_Prenume_Grupa.py` or `.ipynb`[cite: 8].
-* [cite_start]**Dataset**: Use only the provided dataset[cite: 9].
-* [cite_start]**Deadline**: 06.01.2026, 23:59[cite: 10].
+* **File Name**: `script.py`
+* **Dataset**: Use only the provided dataset
